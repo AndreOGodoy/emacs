@@ -22,3 +22,7 @@
 
 ;; Supress start-up screen
 (setq inhibit-startup-screen t)
+
+;; Make magit open fullscreen
+(setq magit-display-buffer-function #'magit-display-buffer-fullframe-status-v1)
+
