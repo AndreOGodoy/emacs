@@ -26,3 +26,9 @@
 ;; Make magit open fullscreen
 (setq magit-display-buffer-function #'magit-display-buffer-fullframe-status-v1)
 
+;; Create recent files menu/key-binding
+(use-package recentf)
+(recentf-mode 1)
+(setq recentf-max-menu-items 25)
+(global-set-key "\C-x\ \C-r" 'recentf-open-files)
+
