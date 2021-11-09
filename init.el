@@ -2,6 +2,9 @@
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 (package-initialize)
 
+(eval-when-compile
+  (require 'use-package))
+
 ;; Theme
 (load-theme 'atom-one-dark t)
 
