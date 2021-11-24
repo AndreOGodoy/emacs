@@ -37,4 +37,10 @@
 
 ;; Key-binding for compile
 (global-set-key "\C-c\ \C-c" 'compile)
+;; Better QOL
+(ido-mode t)
+(setq ido-everywhere t)
+(setq ido-enable-flex-matching t)
+(global-set-key (kbd "M-x") 'smex)
+
 
