@@ -9,7 +9,7 @@
 (load-theme 'atom-one-dark t)
 
 ;; Font
-(set-frame-font "Droid Sans Mono-16" t)
+(set-frame-font "Iosevka-16" t)
 
 ;; Hide menus
 (menu-bar-mode -1)
