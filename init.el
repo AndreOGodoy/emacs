@@ -43,6 +43,19 @@
 (setq ido-enable-flex-matching t)
 (global-set-key (kbd "M-x") 'smex)
 
+;;;;;;;; LSP ;;;;;;;;
+(use-package eglot)
+(add-hook 'rust-mode-hook 'eglot-ensure)
+(add-to-list 'eglot-server-programs '(rust-mode . ("rust-analyzer")))
+
+(add-hook 'eglot--managed-mode-hook (lambda () (flymake-mode -1)))
+
+(use-package pyvenv
+  :config (pyvenv-mode 1))
+
+;; Enable Company Mode
+(add-hook 'after-init-hook 'global-company-mode)
+
 ;; Don't litter my init file
 (setq custom-file (expand-file-name "custom.el" user-emacs-directory))
 (load custom-file 'noerror)
