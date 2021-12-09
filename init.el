@@ -43,4 +43,11 @@
 (setq ido-enable-flex-matching t)
 (global-set-key (kbd "M-x") 'smex)
 
+;; Don't litter my init file
+(setq custom-file (expand-file-name "custom.el" user-emacs-directory))
+(load custom-file 'noerror)
+
+;; Don't litter my working directory
+(setq backup-directory-alist '(("." . "~/.config/emacs/backups")))
+(setq backup-by-copying t)
 
