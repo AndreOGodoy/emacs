@@ -51,7 +51,7 @@
 (setq ido-everywhere t)
 (setq ido-enable-flex-matching t)
 
-(setq show-trailing-whitespace t)
+(setq-default show-trailing-whitespace t)
 
 (use-package smex
   :ensure t)
