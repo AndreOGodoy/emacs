@@ -53,6 +53,8 @@
 (setq ido-everywhere t)
 (setq ido-enable-flex-matching t)
 
+(setq show-trailing-whitespace t)
+
 (use-package smex
   :ensure t)
 (global-set-key (kbd "M-x") 'smex)
