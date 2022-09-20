@@ -51,6 +51,8 @@
 (setq ido-everywhere t)
 (setq ido-enable-flex-matching t)
 
+(setq pixel-scroll-precision-mode t)
+
 (setq-default show-trailing-whitespace t)
 
 (use-package smex
