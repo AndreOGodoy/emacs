@@ -50,10 +50,14 @@
 (ido-mode t)
 (setq ido-everywhere t)
 (setq ido-enable-flex-matching t)
+(setq next-line-add-newlines t)
+(define-key global-map (kbd "RET") 'newline-and-indent)
 
 (setq pixel-scroll-precision-mode t)
 
 (setq-default show-trailing-whitespace t)
+
+(global-auto-revert-mode 1)
 
 (use-package smex
   :ensure t)
