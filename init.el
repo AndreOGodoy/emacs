@@ -46,6 +46,12 @@
 (setq recentf-max-menu-items 25)
 (global-set-key "\C-x\ \C-r" 'recentf-open-files)
 
+(use-package projectile
+  :ensure t)
+
+(projectile-mode +1)
+(define-key projectile-mode-map (kbd "C-c p") 'projectile-command-map)
+
 ;; Better QOL
 (ido-mode t)
 (setq ido-everywhere t)
