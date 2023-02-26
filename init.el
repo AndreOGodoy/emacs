@@ -93,3 +93,6 @@
 (global-set-key (kbd "s-S-<return>") #'terminal-here-launch)
 (setq terminal-here-linux-terminal-command 'alacritty)
 
+(use-package org-setup
+  :load-path "~/.config/emacs/configs")
+
