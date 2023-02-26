@@ -88,3 +88,8 @@
 (setq backup-directory-alist '(("." . "~/.config/emacs/backups")))
 (setq backup-by-copying t)
 
+(use-package terminal-here
+  :ensure t)
+(global-set-key (kbd "s-S-<return>") #'terminal-here-launch)
+(setq terminal-here-linux-terminal-command 'alacritty)
+
