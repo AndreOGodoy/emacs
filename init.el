@@ -15,10 +15,10 @@
   :ensure t)
 
 ;; Theme
-(load-theme 'gruvbox-dark-medium t)
+(load-theme 'gruvbox-dark-hard t)
 
 ;; Font
-(set-frame-font "Iosevka-16" t)
+(set-frame-font "Iosevka-20" t)
 
 ;; Hide menus
 (menu-bar-mode -1)
